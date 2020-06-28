@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c110f6a-bb28-497f-a97c-682263ae024c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/GameImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/MessageGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/MessageGeneratorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/GameImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/NumberGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/leopard/jaguar/NumberGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/leopard/jaguar/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/leopard/jaguar/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/leopard/jaguar/NumberGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/leopard/jaguar/NumberGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/leopard/jaguar/NumberGeneratorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/leopard/jaguar/NumberGeneratorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,33 +96,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1177" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1592942573238">
+    <state x="1177" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1593016335535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1177" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592942573238" />
-    <state width="1023" height="279" key="GridCell.Tab.0.bottom" timestamp="1592939841810">
+    <state x="1177" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593016335535" />
+    <state x="1152" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593105850442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1023" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592939841810" />
-    <state width="1023" height="279" key="GridCell.Tab.0.center" timestamp="1592939841810">
+    <state x="1152" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593105850442" />
+    <state width="959" height="279" key="GridCell.Tab.0.bottom" timestamp="1593299828668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1023" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592939841810" />
-    <state width="1023" height="279" key="GridCell.Tab.0.left" timestamp="1592939841810">
+    <state width="959" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593299828668" />
+    <state width="959" height="279" key="GridCell.Tab.0.center" timestamp="1593299828668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1023" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592939841810" />
-    <state width="1023" height="279" key="GridCell.Tab.0.right" timestamp="1592939841810">
+    <state width="959" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593299828668" />
+    <state width="959" height="279" key="GridCell.Tab.0.left" timestamp="1593299828668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1023" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592939841810" />
-    <state x="685" y="226" key="new project wizard" timestamp="1592936016532">
+    <state width="959" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593299828668" />
+    <state width="959" height="279" key="GridCell.Tab.0.right" timestamp="1593299828668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="685" y="226" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592936016532" />
-    <state x="1028" y="246" width="672" height="677" key="run.anything.popup" timestamp="1592936730575">
+    <state width="959" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593299828668" />
+    <state x="685" y="226" key="new project wizard" timestamp="1593304115718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1028" y="246" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592936730575" />
+    <state x="685" y="226" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1593304115718" />
+    <state x="1028" y="246" width="672" height="677" key="run.anything.popup" timestamp="1593016202492">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1028" y="246" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593016202492" />
   </component>
 </project>

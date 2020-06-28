@@ -2,6 +2,11 @@ package leopard.jaguar;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 public class GameImpl implements Game {
 
@@ -9,6 +14,7 @@ public class GameImpl implements Game {
     private static final Logger log = LoggerFactory.getLogger(GameImpl.class);
 
     // == fields ==
+    @Autowired
     private NumberGenerator numberGenerator;
     private int guessCount = 10;
     private int number;
@@ -18,7 +24,8 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
-    //== public methods ==
+    // == init ==
+    @PostConstruct
     @Override
     public void reset() {
         smallest = 0;
@@ -28,6 +35,13 @@ public class GameImpl implements Game {
         number = numberGenerator.next();
         log.debug("the number is {}", number);
     }
+
+    @PreDestroy
+    public void preDestroy(){
+        log.info("in Game preDestroy()");
+    }
+
+    //== public methods ==
 
     @Override
     public int getNumber() {
